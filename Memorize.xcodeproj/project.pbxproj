@@ -14,6 +14,7 @@
 		3173E1E426E9292D0043C8D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3173E1E326E9292D0043C8D2 /* Preview Assets.xcassets */; };
 		3173E1E726E9292D0043C8D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3173E1E526E9292D0043C8D2 /* LaunchScreen.storyboard */; };
 		3173E1F026E943850043C8D2 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3173E1EF26E943850043C8D2 /* MemoryGame.swift */; };
+		3173E1F226E948DE0043C8D2 /* EmojiMemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3173E1F126E948DE0043C8D2 /* EmojiMemoryGameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3173E1E626E9292D0043C8D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3173E1E826E9292D0043C8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3173E1EF26E943850043C8D2 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		3173E1F126E948DE0043C8D2 /* EmojiMemoryGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3173E1EF26E943850043C8D2 /* MemoryGame.swift */,
+				3173E1F126E948DE0043C8D2 /* EmojiMemoryGameViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				3173E1DD26E9292A0043C8D2 /* SceneDelegate.swift in Sources */,
 				3173E1F026E943850043C8D2 /* MemoryGame.swift in Sources */,
 				3173E1DF26E9292A0043C8D2 /* ContentView.swift in Sources */,
+				3173E1F226E948DE0043C8D2 /* EmojiMemoryGameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
