@@ -13,7 +13,7 @@ class EmojiMemoryGameViewModel {
     static let emojis = ["🤲", "👐", "👏", "🤝", "👍", "👎", "👊", "✊", "🤜", "🤞", "✌️", "🤟", "👌", "🤌", "🤏"]
     
     static func createMemoryGame() -> MemoryGame<String> {
-        MemoryGame<String>(numberOfPairsOfCards: 4) { pairIndex in EmojiMemoryGameViewModel.emojis[pairIndex] }
+        MemoryGame<String>(numberOfPairsOfCards: 4) { pairIndex in emojis[pairIndex] }
     }
     
     private(set) var model: MemoryGame<String> = createMemoryGame()
