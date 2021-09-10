@@ -44,9 +44,9 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
     
     //by nesting Card struct we put it inside the Memory Game: MemoryGame.Card
     struct Card: Identifiable {
-        var id: Int
+        let id: Int
         var isFaceUp: Bool = false
         var isMatched: Bool = false
-        var content: CardContent
+        let content: CardContent
     }
 }
