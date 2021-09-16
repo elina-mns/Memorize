@@ -12,9 +12,7 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
     private(set) var cards: Array<Card>
     private var indexOfFaceUpCard: Int? {
         get { cards.indices.filter { cards[$0].isFaceUp }.one }
-    
-        set {
-            cards.indices.forEach { index in cards[index].isFaceUp = (index == newValue) }
+        set { cards.indices.forEach { cards[$0].isFaceUp = ($0 == newValue) }
         }
     }
     
