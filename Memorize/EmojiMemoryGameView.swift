@@ -13,11 +13,15 @@ struct EmojiMemoryGameView: View {
     
     var body: some View {
         AspectVGrid(items: gameViewModel.cards, aspectRatio: 2/3, content: { card in
-            CardView(card: card)
-                .padding(4)
-                .onTapGesture {
-                    gameViewModel.choose(card)
-                }
+            if !card.isFaceUp && card.isMatched {
+                Rectangle().opacity(0)
+            } else {
+                CardView(card: card)
+                    .padding(4)
+                    .onTapGesture {
+                        gameViewModel.choose(card)
+                    }
+            }
         })
         .foregroundColor(.red)
         .padding(.horizontal)
@@ -47,9 +51,9 @@ struct CardView: View {
     }
     
     private struct DrawingConstants {
-        static let cornerRadius: CGFloat = 20
+        static let cornerRadius: CGFloat = 10
         static let lineWidth: CGFloat = 3
-        static let fontScale: CGFloat = 0.8
+        static let fontScale: CGFloat = 0.75
     }
 }
 
